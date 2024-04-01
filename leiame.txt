@@ -2,16 +2,21 @@
  $ source "$HOME/.sdkman/bin/sdkman-init.sh"
   sdk version
    sdk install java 17.0.6-tem
+   sdk use java 17.0.6-tem
     java --version
 	
- quarkus 3.9.1 
+  sdk install quarkus
+  quarkus --version
+    quarkus 3.9.1 
  
+ ?
  docker
  docker --version
+?
 
 ***
  cd election-management
- $ ./mvnw clean package
+ ./mvnw clean package
  criou em C:\JAVA\lab-quarkus\election-management\target
  election-management-1.0.0-SNAPSHOT.jar
  ****
