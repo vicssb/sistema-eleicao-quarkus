@@ -1,0 +1,222 @@
+ curl -s "https://get.sdkman.io" | bash
+ $ source "$HOME/.sdkman/bin/sdkman-init.sh"
+  sdk version
+   sdk install java 17.0.6-tem
+    java --version
+	
+ quarkus 3.9.1 
+ 
+ docker
+ docker --version
+
+***
+ cd election-management
+ $ ./mvnw clean package
+ criou em C:\JAVA\lab-quarkus\election-management\target
+ election-management-1.0.0-SNAPSHOT.jar
+ ****
+ 
+ pasta raiz:
+./cicd-build.sh election-management
+
+
+
+ 
+ 
+ 
+ 
+ 
+ $ curl -s "https://get.sdkman.io" | bash
+
+                                -+syyyyyyys:
+                            `/yho:`       -yd.
+                         `/yh/`             +m.
+                       .oho.                 hy                          .`
+                     .sh/`                   :N`                `-/o`  `+dyyo:.
+                   .yh:`                     `M-          `-/osysoym  :hs` `-+sys:      hhyssssssssy+
+                 .sh:`                       `N:          ms/-``  yy.yh-      -hy.    `.N-````````+N.
+               `od/`                         `N-       -/oM-      ddd+`     `sd:     hNNm        -N:
+              :do`                           .M.       dMMM-     `ms.      /d+`     `NMMs       `do
+            .yy-                             :N`    ```mMMM.      -      -hy.       /MMM:       yh
+          `+d+`           `:/oo/`       `-/osyh/ossssssdNMM`           .sh:         yMMN`      /m.
+         -dh-           :ymNMMMMy  `-/shmNm-`:N/-.``   `.sN            /N-         `NMMy      .m/
+       `oNs`          -hysosmMMMMydmNmds+-.:ohm           :             sd`        :MMM/      yy
+      .hN+           /d:    -MMMmhs/-.`   .MMMh   .ss+-                 `yy`       sMMN`     :N.
+     :mN/           `N/     `o/-`         :MMMo   +MMMN-         .`      `ds       mMMh      do
+    /NN/            `N+....--:/+oooosooo+:sMMM:   hMMMM:        `my       .m+     -MMM+     :N.
+   /NMo              -+ooooo+/:-....`...:+hNMN.  `NMMMd`        .MM/       -m:    oMMN.     hs
+  -NMd`                                    :mm   -MMMm- .s/     -MMm.       /m-   mMMd     -N.
+ `mMM/                                      .-   /MMh. -dMo     -MMMy        od. .MMMs..---yh
+ +MMM.                                           sNo`.sNMM+     :MMMM/        sh`+MMMNmNm+++-
+ mMMM-                                           /--ohmMMM+     :MMMMm.       `hyymmmdddo
+ MMMMh.                  ````                  `-+yy/`yMMM/     :MMMMMy       -sm:.``..-:-.`
+ dMMMMmo-.``````..-:/osyhddddho.           `+shdh+.   hMMM:     :MmMMMM/   ./yy/` `:sys+/+sh/
+ .dMMMMMMmdddddmmNMMMNNNNNMMMMMs           sNdo-      dMMM-  `-/yd/MMMMm-:sy+.   :hs-      /N`
+  `/ymNNNNNNNmmdys+/::----/dMMm:          +m-         mMMM+ohmo/.` sMMMMdo-    .om:       `sh
+     `.-----+/.`       `.-+hh/`         `od.          NMMNmds/     `mmy:`     +mMy      `:yy.
+           /moyso+//+ossso:.           .yy`          `dy+:`         ..       :MMMN+---/oys:
+         /+m:  `.-:::-`               /d+                                    +MMMMMMMNh:`
+        +MN/                        -yh.                                     `+hddhy+.
+       /MM+                       .sh:
+      :NMo                      -sh/
+     -NMs                    `/yy:
+    .NMy                  `:sh+.
+   `mMm`               ./yds-
+  `dMMMmyo:-.````.-:oymNy:`
+  +NMMMMMMMMMMMMMMMMms:`
+    -+shmNMMMNmdy+:`
+
+
+                                                                 Now attempting installation...
+
+
+Looking for a previous installation of SDKMAN...
+Looking for unzip...
+Looking for zip...
+Looking for curl...
+Looking for sed...
+Installing SDKMAN scripts...
+Create distribution directories...
+Getting available candidates...
+Prime platform file...
+Prime the config file...
+Installing script cli archive...
+* Downloading...
+######################################################################## 100.0%
+* Checking archive integrity...
+* Extracting archive...
+* Copying archive contents...
+* Cleaning up...
+
+Installing script cli archive...
+* Downloading...
+######################################################################## 100.0%
+* Checking archive integrity...
+* Extracting archive...
+* Copying archive contents...
+* Cleaning up...
+
+Set version to 5.18.2 ...
+Set native version to 0.4.6 ...
+Attempt update of interactive bash profile on regular UNIX...
+Added sdkman init snippet to /c/Users/victor.silva.barros/.bashrc
+Attempt update of zsh profile...
+Updated existing /c/Users/victor.silva.barros/.zshrc
+
+
+
+All done!
+
+
+You are subscribed to the STABLE channel.
+
+Please open a new terminal, or run the following in the existing one:
+
+    source "/c/Users/victor.silva.barros/.sdkman/bin/sdkman-init.sh"
+
+Then issue the following command:
+
+    sdk help
+
+Enjoy!!!
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$  sdk version
+
+SDKMAN!
+script: 5.18.2
+native: 0.4.6
+
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ sdk install java 17.0.6-tem
+
+Downloading: java 17.0.6-tem
+
+In progress...
+
+######################################################################## 100.0%
+
+Installing: java 17.0.6-tem
+Done installing!
+
+
+Setting java 17.0.6-tem as default.
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ java --version
+openjdk 17.0.6 2023-01-17
+OpenJDK Runtime Environment Temurin-17.0.6+10 (build 17.0.6+10)
+OpenJDK 64-Bit Server VM Temurin-17.0.6+10 (build 17.0.6+10, mixed mode, sharing)
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ sdk use java 17.0.6-tem
+
+Using java version 17.0.6-tem in this shell.
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ echo $JAVA_HOME
+/c/Users/victor.silva.barros/.sdkman/candidates/java/17.0.6-tem
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ sdk install quarkus 2.16.4.final
+
+Stop! quarkus 2.16.4.final is not available. Possible causes:
+ * 2.16.4.final is an invalid version
+ * quarkus binaries are incompatible with your platform
+ * quarkus has not been released yet
+
+Tip: see all available versions for your platform:
+
+  $ sdk list quarkus
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ quarkus --version
+bash: quarkus: command not found
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ quarkus list
+bash: quarkus: command not found
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ sdk list quarkus
+
+[1]+  Stopped                 echo "$@" | less
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ sdk install quarkus 3.2.11.final
+
+Stop! quarkus 3.2.11.final is not available. Possible causes:
+ * 3.2.11.final is an invalid version
+ * quarkus binaries are incompatible with your platform
+ * quarkus has not been released yet
+
+Tip: see all available versions for your platform:
+
+  $ sdk list quarkus
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ sdk list quarkus
+
+[2]+  Stopped                 echo "$@" | less
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ ^C
+
+victor.silva.barros@WINAPY01fCq9o2B MINGW64 /c/JAVA/sistema-eleicao-quarkus
+$ sdk install quarkus
+
+Downloading: quarkus 3.9.1
+
+In progress...
+
+######################################################################## 100.0%
+
+Installing: quarkus 3.9.1
+Done installing!
+
+
+Setting quarkus 3.9.1 as default.
