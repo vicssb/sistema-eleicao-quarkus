@@ -223,5 +223,10 @@ In progress...
 Installing: quarkus 3.9.1
 Done installing!
 
+criar pastas
 
 Setting quarkus 3.9.1 as default.
+
+cd election-management/
+
+http://localhost:8080/q/dev/
