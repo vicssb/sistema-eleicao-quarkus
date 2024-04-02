@@ -8,4 +8,6 @@ public interface CandidateRepository {
     }
 
     List<Candidate> findAll();
+
+    Optional<Candidate> findBiId(String id);
 }
