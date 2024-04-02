@@ -16,12 +16,9 @@ public class SQLCandidateRepository implements CandidateRepository {
     }
 
     @Override
-    public List<Candidate> findAll() {
+    public List<Candidate> find() {
         return List.of();
     }
 
-    @Override
-    public Optional<Candidate> findById(String id) {
-        return Optional.empty();
-    }
+
 }
