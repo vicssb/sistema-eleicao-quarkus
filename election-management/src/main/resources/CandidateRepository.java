@@ -5,7 +5,7 @@ public interface CandidateRepository {
     void save(List<Candidate> candidates);
 
     default void save(Candidate candidate) {
-        save(List.of(candidate));
+        save(candidate);
     }
 
     default List<Candidate> findAll(){
