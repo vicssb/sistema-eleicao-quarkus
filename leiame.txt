@@ -45,7 +45,24 @@ http://localhost:8080/q/dev
 
 TELA graylog   http://logging.private.dio.localhost/
 
+instalar flyway e mariaDB:
+quarkus extension add 'quarkus-flyway' 'quarkus-jdbc-mariadb'
 
+pow.xml:
+<dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-flyway</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-mysql</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jdbc-mariadb</artifactId>
+    </dependency>
+
+    mkdir -p src/main/resources/db/migration
 
 
 
