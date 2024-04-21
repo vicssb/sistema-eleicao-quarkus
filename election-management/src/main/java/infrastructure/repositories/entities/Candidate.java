@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Optional;
+import java.util.UUID;
 
 @Entity(name = "candidates")
 
@@ -21,6 +22,18 @@ public class Candidate {
     @Column(name = "job_title")
     private String job_title;
 
+    public Candidate(String id, Optional<String> photo, String s, String s1, String email, Optional<String> phone, Optional<String> s2) {
+
+    }
+
+    public static domain.Candidate create(Optional<String>photo,
+                                          String givenName,
+                                          String familyName,
+                                          String email,
+                                          Optional<String> phone,
+                                          Optional<String> job_title) {
+        return new domain.Candidate(UUID.randomUUID().toString(), photo, givenName, familyName, email, phone, job_title);
+    }
 
 
     public String getId() {
