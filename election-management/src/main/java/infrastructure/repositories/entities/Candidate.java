@@ -1,14 +1,13 @@
 package infrastructure.repositories.entities;
 
-import domain.Candidate;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.Optional;
 
 @Entity(name = "candidates")
 
-public class Cadidate {
+public class Candidate {
     @Id
     private String id;
     private String photo;
@@ -79,8 +78,8 @@ public class Cadidate {
     public void setJob_title(String job_title) {
         this.job_title = job_title;
     }
-    public static Cadidate fromDomain(domain.Candidate domain) {
-        Cadidate entity = new Cadidate();
+    public static Candidate fromDomain(domain.Candidate domain) {
+        Candidate entity = new Candidate();
 
         entity.setId(domain.id());
         entity.setPhoto(domain.photo().orElse(null));
@@ -91,5 +90,15 @@ public class Cadidate {
         entity.setJob_title(domain.jobTitle().orElse(null));
 
         return entity;
+    }
+
+    public domain.Candidate toDomain() {
+        return new domain.Candidate(getId(),
+                Optional.ofNullable(getPhoto()),
+                getGiven_name(),
+                getFamily_name(),
+                getEmail(),
+                Optional.ofNullable(getPhone()),
+                Optional.ofNullable(getJob_title()));
     }
 }

@@ -6,8 +6,13 @@ import domain.CandidateRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 @ApplicationScoped
 public class SQLCandidateRepository implements CandidateRepository {
@@ -21,20 +26,37 @@ public class SQLCandidateRepository implements CandidateRepository {
     @Transactional
     public void save(List<Candidate> candidates) {
         candidates.stream()
-                .map(candidate -> {
-                    return infrastructure.repositories.entities
-                            .Cadidate::fromDomain;
-                })<Candidate>
-                .forEach(entity -> {
-                    entityManager.merge(entity);
-        }
-    .forEach(entityManager));
+                .map(infrastructure.repositories.entities
+                        .Candidate::fromDomain)
+                .forEach(entityManager::merge);
+
     }
 
     @Override
     public List<Candidate> find(CandidateQuery query) {
-        return null;
+        var cb = entityManager.getCriteriaBuilder();
+        var cq = cb.createQuery(infrastructure.repositories.entities.Candidate.class);
+        var root = cq.from(infrastructure.repositories.entities.Candidate.class);
+
+        var where = query.ids().map(id -> cb.in(root.get("id")).value(id)).get();
+
+//        cq.select(root).where(conditions(query, cb, root));
+
+        return entityManager.createQuery(cq)
+                .getResultStream()
+                .map(infrastructure.repositories.entities.Candidate::toDomain)
+                .toList();
     }
+/*
+    private Predicate[] conditions(CandidateQuery query,
+                                   CriteriaBuilder cb,
+                                   Root<infrastructure.repositories.entities.Candidate> root){
+        return Stream.of(query.ids().map(id -> cb.in(root.get("id")).value(id)),
+                query.name().map(name -> cb.or(cb.like(cb.lower(root.get("familyName")), name.toLowerCase() + "%"),
+                        cb.like(cb.lower(root.get("givenName")), name.toLowerCase() + "%"))))
+                                .flatMap(Optional::stream)
+                                .toArray(Predicate[]::new);
 
-
+    }
+*/
 }
